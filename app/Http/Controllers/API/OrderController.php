@@ -90,11 +90,11 @@ class OrderController extends Controller
     {
         $search = $request->input('search');
 
-        $result = Order::where('name', 'like', '%'.$search.'%')->orWhereHas('customer', function ($query) use ($search){
+        $result = Order::with('customer:id,name')->where('name', 'like', '%'.$search.'%')->orWhereHas('customer', function ($query) use ($search){
             return $query->where('name', 'like', '%'.$search.'%');
-        })->paginate(5);
+        });
 
-        return new OrderCollection($result->load('customer'));
+        return new OrderCollection($result->latest()->paginate(5));
     }
 
     /**

@@ -11,10 +11,8 @@
                   <router-link to="/add" tag="button" class="btn btn-success float-right mb-4">Add Order</router-link>
                   <a class="btn btn-warning" href="/export">Export As Excel</a>
                 <div class="input-group mb-3 mt-2">
-                  <input v-model="search" type="text" class="form-control" placeholder="enter your search pattern..">
-                  <div class="input-group-append search">
-                    <span class="input-group-text" id="basic-addon2" @click="makeSearch"><i class="fas fa-search"></i></span>
-                  </div>
+                  <input @keyup="makeSearch" v-model="search" type="text" class="form-control" placeholder="enter your search pattern..">
+                  
                 </div>
                 </div>
               </div>
