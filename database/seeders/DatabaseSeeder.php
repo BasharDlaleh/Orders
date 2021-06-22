@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::create(['name' => 'admin', 'email' => 'admin@gmail.com', 'email_verified_at' => now(), 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'remember_token' =>  \Illuminate\Support\Str::random(10), 'api_token' =>  'utwe2AXiyvokbomS3aGALkTRXE38lqHRo64ZrnkA']);
+        User::create(['name' => 'admin', 'email' => 'admin@gmail.com', 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'remember_token' =>  \Illuminate\Support\Str::random(10), 'api_token' =>  'utwe2AXiyvokbomS3aGALkTRXE38lqHRo64ZrnkA']);
 
         $c1 = Customer::create(['name' => 'customer1', 'phone' => '097777777']);
         $c2 = Customer::create(['name' => 'customer2', 'phone' => '098888888']);
