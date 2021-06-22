@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "7eae6bbf-b9fa-4fda-b63f-015f6abc7283",
+		"name": "All Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/order",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer utwe2AXiyvokbomS3aGALkTRXE38lqHRo64ZrnkA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/order",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer utwe2AXiyvokbomS3aGALkTRXE38lqHRo64ZrnkA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Jun 2021 17:22:31 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Jun 2021 17:22:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"customer_id\": 1,\n            \"name\": \"order1\",\n            \"created_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"updated_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"customer\": {\n                \"id\": 1,\n                \"name\": \"customer1\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"customer_id\": 1,\n            \"name\": \"order2\",\n            \"created_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"updated_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"customer\": {\n                \"id\": 1,\n                \"name\": \"customer1\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"customer_id\": 2,\n            \"name\": \"order3\",\n            \"created_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"updated_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"customer\": {\n                \"id\": 2,\n                \"name\": \"customer2\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"customer_id\": 2,\n            \"name\": \"order4\",\n            \"created_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"updated_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"customer\": {\n                \"id\": 2,\n                \"name\": \"customer2\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"customer_id\": 3,\n            \"name\": \"order5\",\n            \"created_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"updated_at\": \"2021-06-21T17:22:10.000000Z\",\n            \"customer\": {\n                \"id\": 3,\n                \"name\": \"customer3\"\n            }\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost:8000/api/order?page=1\",\n        \"last\": \"http://localhost:8000/api/order?page=2\",\n        \"prev\": null,\n        \"next\": \"http://localhost:8000/api/order?page=2\"\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 2,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/order?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://localhost:8000/api/order?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/order?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost:8000/api/order\",\n        \"per_page\": 5,\n        \"to\": 5,\n        \"total\": 6\n    }\n}"
+				}
+			]
+		}
+	]
+}
