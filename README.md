@@ -6,7 +6,7 @@
 
 2. got to your project path in terminal "cd /your_project_path/" 
 
-3. run this in terminal "composer install"  (use a proxy if you are in Syria)
+3. run this in terminal "composer install"
 
 4. run this in terminal "npm install"
 
