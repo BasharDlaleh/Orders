@@ -1,3 +1,5 @@
+## a CRUD app for managing orders and products
+
 ######### How to install the project #########
 
 1. clone the project from https://github.com/BasharDlaleh/Orders.git
@@ -23,13 +25,11 @@
 
 2. after you open the browser login with the default admin (email : admin@gmail.com , password : password ) or hit the Register link and add a new user  
 
-3. you can check all orders postman file in docs/All_Orders.json
+3. you can check ERD diagram in docs/ERD.PNG
 
-4. you can check ERD diagram in docs/ERD.PNG
+4. you can check UML diagram in "http://localhost:8000/uml"
 
-5. you can check UML diagram in "http://localhost:8000/uml"
+5. the project was built as a SPA using Laravel, Vue and Bootstrap frameworks.
 
-6. the project was built as a SPA using Laravel, Vue and Bootstrap frameworks.
-
-7. I have set an API authentication mechanism using tokens . 
+6. I have set an API authentication mechanism using tokens . 
 
